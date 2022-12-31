@@ -55,3 +55,104 @@ table {
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+    grid-row: 1 / 3;
+    background-color: #1992D4;
+}
+
+.menu-user,
+.menu-others {
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidebar h1 {
+    border: 1px solid black;
+}
+
+.menu-user {
+    border: 1px solid red;
+}
+
+.menu-others {
+    border: 1px solid rgb(185, 218, 255);
+}
+
+.header  {
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header-line1 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    border: 1px solid indigo;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 10rem;
+    border: 1px solid darkgoldenrod;
+}
+
+.user-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    margin-right: 5rem;
+    border: 1px solid darkgoldenrod;
+}
+
+.header-line2 {
+    border: 1px solid indianred;
+}
+
+.content {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border: 1px solid green;
+}
+
+.left-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    border: 1px solid blueviolet;
+}
+
+.left-grid h1 {
+    grid-column: 1 / 3;
+}
+
+.card {
+    border: 1px solid red;
+}
+
+.right-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid black;
+}
+
+.announcements {
+    grid-row: 1;
+    border: 1px solid yellow;
+}
+
+.trending {
+    grid-row: 2;
+    border: 1px solid teal;
+}
