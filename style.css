@@ -310,7 +310,7 @@ body {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
 }
 
@@ -360,8 +360,13 @@ body {
 
 .right-grid {
     display: grid;
-    grid-template-rows: auto auto;
-    gap: 1.5rem;
+    gap: 2rem;
+}
+
+.announcements,
+.trendings {
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 
 .announcements > h1,
@@ -370,17 +375,17 @@ body {
 }
 
 .information:nth-child(1) {
-    padding: 0 0 1rem 0;
+    padding: 0 0 1.5rem 0;
     border-bottom: 1px solid #D2D2D2;
 }
 
 .information:nth-child(2) {
-    padding: 1rem 0 1rem 0;
+    padding: 1.5rem 0 1.5rem 0;
     border-bottom: 1px solid #D2D2D2;
 }
 
 .information:nth-child(3) {
-    padding: 1rem 0 0 0;
+    padding: 1.5rem 0 0 0;
 }
 
 .info h1 {
@@ -405,12 +410,13 @@ body {
 .trendings > .informations {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .usertag {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
     align-items: center;
 }
 
