@@ -318,7 +318,6 @@ body {
     display: grid;
     grid-template-rows: auto auto 1fr;
     border-left: 8px solid #F0B429;
-
 }
 
 .card,
@@ -400,11 +399,6 @@ body {
     display: -webkit-box;
     -webkit-line-clamp: 3; /* after 3 line show ... */
     -webkit-box-orient: vertical;
-}
-
-.information .info:nth-child(n+2) h1 {
-    margin-top: 3rem;
-    background-color: gold;
 }
 
 .trendings > .informations {
