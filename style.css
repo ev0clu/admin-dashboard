@@ -142,8 +142,13 @@ body {
     grid-column: 2;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     z-index: 1;
+}
+
+.header,
+.card,
+.informations {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .header-top {
@@ -283,7 +288,7 @@ body {
     grid-template-columns: 3fr 1fr;
     gap: 1.5rem;
     background-color: var(--content-bg-color);
-    padding: 1.5rem;
+    padding: 2rem;
 }
 
 .left-grid {
@@ -306,13 +311,14 @@ body {
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .card {
     display: grid;
     grid-template-rows: auto auto 1fr;
     border-left: 8px solid #F0B429;
+
 }
 
 .card,
